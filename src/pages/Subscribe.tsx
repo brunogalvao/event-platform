@@ -3,6 +3,7 @@ import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import ImgBG from ''
 
 export default function Subscribe() {
 
@@ -67,7 +68,9 @@ export default function Subscribe() {
                 </div>
             </div>
 
-            <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+            <div className="w-full h-[650px] bg-codeMockup bg-cover">
+
+            </div>
         </div>
     )
 }
